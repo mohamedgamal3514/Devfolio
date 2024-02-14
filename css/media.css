@@ -1,0 +1,36 @@
+/* ----------large secreen---------- */
+@media (min-width: 1024px) {
+  #navbar .hover > a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--white-color);
+    bottom: -1px;
+    left: 10px;
+    transition: all 0.5s;
+  }
+
+  #navbar .hover:hover a::after {
+    width: 60%;
+  }
+
+  .deep_dropdown:hover .sub_dropdown {
+    left: -101%;
+    top: 0;
+  }
+
+  #navbar .sub_menu {
+    width: auto;
+  }
+
+  #hero .caption h1 {
+    font-size: 4rem;
+  }
+
+  #hero .caption h2::before {
+    content: "";
+    animation: jobs 12s infinite;
+    font-size: 2.5rem;
+  }
+}

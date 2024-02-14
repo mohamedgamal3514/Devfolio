@@ -1,0 +1,247 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #1e1e1e;
+    --secondary-color: #4e4e4e;
+    --ternary-color: #0078ff;
+    --white-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 74px;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+
+/* General Styles */
+.title h2 {
+    font-size: 3rem;
+}
+
+.title p::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 4px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: var(--ternary-color);
+}
+
+#about .main_row,
+#services .card,
+#portfolio .cards .card,
+#blog .card,
+#contacts .row {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Start Navbar */
+#navbar .navbar-toggler:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+#navbar .dropdown-toggle::after {
+    border: 0;
+}
+
+#navbar .sub_menu {
+    width: 40%;
+}
+
+.deep_dropdown:hover .sub_dropdown {
+    left: 100%;
+    top: 0;
+    opacity: 1 !important;
+}
+
+/* End Navbar */
+
+/* Start Hero */
+#hero {
+    background-image: linear-gradient(to bottom, #000000bb, #000000bb), url("../images/hero-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#hero .caption h1 {
+    font-size: 2.8rem;
+}
+
+#hero .caption h2::before {
+    content: "";
+    animation: jobs 12s infinite;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+/* End Hero */
+
+/* Start About */
+#about .main_row {
+    background-color: var(--white-color);
+}
+
+#about img {
+    width: 180px;
+}
+
+#about .about_text h2::after,
+#contacts .content h2::after {
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--ternary-color);
+}
+
+/* End About */
+
+/* Start Services */
+#services .card .icon span {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 0.8s;
+}
+
+#services .card:hover span {
+    background-color: var(--ternary-color);
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+#services .card:hover span i {
+    color: var(--white-color);
+}
+
+/* End Services */
+
+/* Start Statics */
+#statics {
+    background-image: linear-gradient(to bottom, #0077ffbb, #0077ffbb), url("../images/post-3.jpg");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    padding: 5rem 0;
+}
+
+#statics .statics_icon span {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+/* End Statics */
+/* Start Portfolio */
+#portfolio .cards .card .img_box {
+    overflow: hidden;
+}
+
+#portfolio .cards .card img {
+    transition: all 0.7s;
+}
+
+#portfolio .cards .card:hover img {
+    transform: scale(1.2);
+}
+
+#portfolio .icon_add {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+/* End Portfolio */
+
+/* Start Review */
+.review {
+    background-image: linear-gradient(to bottom, #0077ffbb, #0077ffbb), url("../images/overlay-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    padding: 5rem 0;
+}
+
+.review img {
+    width: 100px;
+}
+
+.review p {
+    font-size: 0.9rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.review .carousel_btn {
+    width: 15px;
+    height: 15px;
+}
+
+/* End Review */
+/* Start Blog */
+#blog .footer_img img {
+    width: 30px;
+    height: 30px;
+}
+
+#blog .card-body h3 {
+    transition: all 0.5s;
+}
+
+#blog .card-body h3:hover {
+    color: var(--ternary-color) !important;
+}
+
+/* End Blog */
+
+/* Start Contacts */
+#contacts {
+    background-image: linear-gradient(to bottom, #0077ffbb, #0077ffbb), url("../images/overlay-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#contacts .row {
+    background-color: var(--white-color);
+
+}
+
+#contacts .social_icons .icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--ternary-color);
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#contacts .social_icons .icon:hover {
+    background-color: var(--ternary-color);
+    box-shadow: 0 0 0 5px #cde1f8;
+}
+
+#contacts .social_icons .icon:hover i {
+    color: var(--white-color);
+}
+
+/* End Contacts */
