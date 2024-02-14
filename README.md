@@ -1,4 +1,4 @@
-Devfolio is a straightforward, responsive website developed as a practice project to explore the following technologies:
+Devfolio a responsive website developed as a practice project to explore the following technologies:
   *  HTML
   *  CSS
   *  Bootstrap components
